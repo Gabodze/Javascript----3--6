@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <style>
+        .correct{
+            color: green;
+        }
+    </style>
+
+    <script>
+    var pattern = /\d/g;
+    var param = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum animi, perspiciatis suscipit tenetur sapiente hic, velit eligendi illo dolorem aut labore fuga iste eveniet quae nulla earum molestias ipsum distinctio."
+    let result = pattern.test(param);        
+    
+
+    if(result){
+        document.write('<span class = "correct"> სწორია </spam>');
+    }else{
+        alert("არასწორია")
+    }
+
+  
+    </script>
+</body>
+</html>
